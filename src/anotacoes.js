@@ -58,7 +58,8 @@
     4- Para rodar meu teste basta executar o comando           npm test 
 
     5- Por padrão o jest não consegue testar componentes react por ex, e para poder fazer 
-    isso eu preciso instalar mais algumas configurações podemos utilizar o swc 
+    isso eu preciso instalar mais algumas configurações podemos utilizar o swc, essa ferramenta 
+    é semelhante ao babel converte um código de um formato para outro formato que seja necessário.
         npm i @swc/core @swc/jest -D
     
     6- feito isso eu preciso fazer uma configuração dentro do arquivo jest.config.ts 
@@ -92,6 +93,9 @@
   },
 
   Feito isso eu vou poder rodar arquivo jsx dentro do meu teste.
+
+  Para que funcione corretamente também devo ir The test environment e fazer a seguinte configuração:
+        testEnvironment: "jsdom",
 
  8- Eu preciso também instalar as bibliotecas do testing library com os seguintes comando 
         npm i @testing-library/react @testing-library/jest-dom @testing-library/user-event -D
